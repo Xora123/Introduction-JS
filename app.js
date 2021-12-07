@@ -24,10 +24,10 @@ function commencer()
 
                 
                 // AFFICHAGE
-                console.log("Contenu du fichier JSON");
+                console.log("Contenu total du fichier JSON :");
                 console.log(data);
 
-                console.log("Nom des utilisateurs");
+                console.log("Nom des utilisateurs :");
                 console.log(usersName);
             }
         );
