@@ -4,28 +4,19 @@ function lancer()
 
     .then(data => data.json())
     .then(function(data)
-    {
-        data = data.customers;
+        {
+            data = data['customers'];
 
-        // UTILISATEURS
-        var users = [];
+            // CRÉER UN TABLEAU AVEC LES NOMS DES UTILISATEURS
+            var users = [];
 
-        for(var index in data) {
-            users[index] = data[index].user_name;
+            for(var index in data) {
+                users[index] = data[index]['user_name'];
+            }
+
+            // AFFICHAGE
+            console.log(data);
+            console.log(users);
         }
-
-
-        // ANIMAUX
-        var pets = [];
-
-        for(var index in data) {
-            users[index] = data[index].user_name;
-        }
-
-
-
-        console.log(data);
-        console.log(users);
-    }
     );
 }
