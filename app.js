@@ -28,7 +28,7 @@ function commencer()
                 console.log(data);
 
                 console.log("Nom des utilisateurs");
-                console.log(users);
+                console.log(usersName);
             }
         );
 }
